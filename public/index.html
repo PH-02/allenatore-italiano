@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тренажёр итальянских артиклей</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>🇮🇹 Итальянские артикли (A1-A2)</h1>
+      <button id="helpBtn" class="icon-button" aria-label="Как пользоваться">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+      </button>
+    </header>
+
+    <div id="helpModal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Как пользоваться тренажёром</h2>
+        <p>Этот тренажёр помогает отрабатывать итальянские определённые и неопределённые артикли уровней A1-A2.</p>
+        <ul>
+          <li>Выберите желаемый <strong>уровень</strong> и <strong>тип артиклей</strong>.</li>
+          <li>В предложении будут пропуски. Впишите правильный артикль в каждый пропуск.</li>
+          <li>Нажмите <strong>Проверить</strong>, чтобы узнать результат. Если ошибетесь, система покажет правильные ответы.</li>
+          <li>Кнопка <strong>Перевод и произношение</strong> покажет полное предложение и его перевод на русский язык.</li>
+        </ul>
+        <button id="closeHelpBtn" class="primary-button">Понятно</button>
+      </div>
+    </div>
+
+    <section class="filters">
+      <div class="filter-group">
+        <label for="levelFilter">Уровень:</label>
+        <select id="levelFilter">
+          <option value="all">A1–A2 (всё)</option>
+          <option value="A1">Только A1</option>
+          <option value="A2">Включая A2</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="typeFilter">Тип артиклей:</label>
+        <select id="typeFilter">
+          <option value="all">Все артикли</option>
+          <option value="definite">Определённые (il, lo, la, l', i, gli, le)</option>
+          <option value="indefinite">Неопределённые (un, uno, una, un')</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="exercise-card">
+      <div class="sentence-container" id="sentenceContainer">
+        <!-- Sentence with inputs will be injected here -->
+        <p class="placeholder-text">Нажмите "Следующее предложение", чтобы начать.</p>
+      </div>
+
+      <div class="actions">
+        <button id="checkBtn" class="primary-button" disabled>Проверить</button>
+        <button id="nextBtn" class="secondary-button">Следующее предложение</button>
+      </div>
+      <div class="extra-actions">
+        <button id="translateBtn" class="text-button" disabled>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>
+          Перевод и произношение
+        </button>
+      </div>
+
+      <div id="feedbackContainer" class="feedback-container hidden">
+        <div id="feedbackMessage" class="feedback-message"></div>
+        <div id="correctAnswersDisplay" class="correct-answers"></div>
+      </div>
+
+      <div id="translationContainer" class="translation-container hidden">
+        <h4>Полное предложение (произношение):</h4>
+        <p id="fullItalianSentence" class="italian-text"></p>
+        <h4>Перевод:</h4>
+        <p id="russianTranslation" class="russian-text">Загрузка перевода...</p>
+      </div>
+    </section>
+
+    <section class="stats-board">
+      <div class="stat-item">
+        <span class="stat-label">Попыток</span>
+        <span id="statTotal" class="stat-value">0</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Правильно</span>
+        <span id="statCorrect" class="stat-value correct">0</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Точность</span>
+        <span id="statPercentage" class="stat-value">0%</span>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="sentences.js?v=4" type="module"></script>
+  <script src="app.js?v=4" type="module"></script>
+</body>
+</html>
