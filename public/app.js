@@ -12,6 +12,9 @@ const feedbackContainer = document.getElementById('feedbackContainer');
 const feedbackMessage = document.getElementById('feedbackMessage');
 const correctAnswersDisplay = document.getElementById('correctAnswersDisplay');
 
+const hintContainer = document.getElementById('hintContainer');
+const hintContent = document.getElementById('hintContent');
+
 const translationContainer = document.getElementById('translationContainer');
 const fullItalianSentence = document.getElementById('fullItalianSentence');
 const russianTranslation = document.getElementById('russianTranslation');
@@ -120,8 +123,9 @@ function renderSentence(sentenceObj) {
   hasChecked = false;
   currentInputs = [];
   
-  // Hide feedback and translations
+  // Hide feedback, hints and translations
   feedbackContainer.classList.add('hidden');
+  hintContainer.classList.add('hidden');
   translationContainer.classList.add('hidden');
 
   // Split text by "___" and insert inputs
@@ -289,6 +293,55 @@ document.addEventListener('touchstart', (e) => {
   }
 }, { passive: true });
 
+// ─── Grammar Hints ──────────────────────────────────────────────────────────
+
+function getNextWord(sentenceText, blankIndex) {
+  const parts = sentenceText.split('___');
+  if (blankIndex >= parts.length - 1) return '';
+  const after = parts[blankIndex + 1].trim();
+  const token = after.split(/\s+/)[0];
+  return token.replace(/^[,.'!?;:"]+|[,.'!?;:"]+$/g, '').trim().toLowerCase();
+}
+
+function getArticleHint(article, nextWord) {
+  const art = article.toLowerCase();
+  const wd = nextWord ? `<em>${nextWord}</em>` : '';
+  const formMap = {
+    'il':  `<strong>IL</strong> &mdash; мужской род, ед.ч. Слово ${wd} начинается на обычную согласную.`,
+    'lo':  `<strong>LO</strong> &mdash; мужской род, ед.ч. Слово ${wd} начинается на <b>s+согл., z, gn, ps, x, y</b>. Перед ними <em>il</em> &rarr; <em>lo</em>.`,
+    "l'":  `<strong>L'</strong> &mdash; муж. или жен. род, ед.ч. Слово ${wd} начинается на <b>гласную</b>. Артикль теряет конечную гласную: <em>il/la</em> &rarr; <em>l'</em>.`,
+    'la':  `<strong>LA</strong> &mdash; женский род, ед.ч. Слово ${wd} начинается на согласную.`,
+    'i':   `<strong>I</strong> &mdash; мужской род, мн.ч. Слово ${wd} начинается на обычную согласную. Форма мн.ч. от <em>il</em>.`,
+    'gli': `<strong>GLI</strong> &mdash; мужской род, мн.ч. Слово ${wd} начинается на <b>гласную, s+согл., z, gn, ps, x, y</b>. Форма мн.ч. от <em>lo</em>.`,
+    'le':  `<strong>LE</strong> &mdash; женский род, мн.ч. Используется со <b>всеми</b> существительными женского рода мн.ч.`,
+    'un':  `<strong>UN</strong> &mdash; мужской род, неопред., ед.ч. Используется перед большинством мужских сущ. ${wd}.`,
+    'uno': `<strong>UNO</strong> &mdash; мужской род, неопред., ед.ч. Слово ${wd} начинается на <b>s+согл., z, gn, ps, x, y</b>. Перед ними <em>un</em> &rarr; <em>uno</em>.`,
+    'una': `<strong>UNA</strong> &mdash; женский род, неопред., ед.ч. Слово ${wd} начинается на согласную.`,
+    "un'": `<strong>UN'</strong> &mdash; женский род, неопред., ед.ч. Слово ${wd} начинается на <b>гласную</b>. <em>una</em> &rarr; <em>un'</em> перед гласными.`,
+  };
+  const isDefinite = ['il','lo',"l'",'la','i','gli','le'].includes(art);
+  const usage = isDefinite
+    ? '<b>Определённый артикль:</b> предмет <b>уже известен</b> обоим собеседникам, является единственным в своём роде, или обозначает общее понятие / категорию. По-русски — «тот самый», «этот» — или вообще не переводится.'
+    : '<b>Неопределённый артикль:</b> предмет <b>упоминается впервые</b>, неизвестен собеседнику или является «одним из многих». По-русски — «какой-то», «один», «некий» — или не переводится.';
+  return { form: formMap[art] || `<strong>${art.toUpperCase()}</strong> ${wd}`, usage };
+}
+
+function showHints() {
+  if (!currentSentence) return;
+  hintContent.innerHTML = '';
+  currentSentence.articles.forEach((article, idx) => {
+    const nextWord = getNextWord(currentSentence.text, idx);
+    const hint = getArticleHint(article, nextWord);
+    const item = document.createElement('div');
+    item.className = 'hint-item';
+    item.innerHTML = `<div class="hint-form">${hint.form}</div><div class="hint-usage">${hint.usage}</div>`;
+    hintContent.appendChild(item);
+  });
+  hintContainer.classList.remove('hidden');
+}
+
+// ────────────────────────────────────────────────────────────────────────────
+
 // Normalize apostrophes and lowercase
 function normalizeAnswer(str) {
   return str.trim().toLowerCase().replace(/['´`’]/g, "'");
@@ -354,6 +407,9 @@ function checkAnswers() {
   }
 
   updateStatsDisplay();
+
+  // Always show hints after checking
+  showHints();
 }
 
 function getItalianSentenceForTranslation() {

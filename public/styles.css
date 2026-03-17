@@ -380,6 +380,75 @@ button:disabled {
   font-size: 0.95rem;
 }
 
+/* Hint Container */
+.hint-container {
+  padding: 16px;
+  border-radius: var(--border-radius-sm);
+  background-color: rgba(99, 102, 241, 0.08);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hint-container.hidden {
+  display: none;
+}
+
+.hint-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hint-icon {
+  font-size: 1.1rem;
+}
+
+.hint-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: var(--accent-primary);
+}
+
+.hint-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hint-item {
+  border-left: 2px solid rgba(99, 102, 241, 0.4);
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hint-form {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.hint-form strong {
+  color: #a5b4fc;
+  font-size: 1rem;
+}
+
+.hint-form em {
+  color: var(--text-tertiary);
+  font-style: italic;
+}
+
+.hint-usage {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
 /* Translation */
 .translation-container {
   padding: 16px;
