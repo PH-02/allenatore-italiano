@@ -7,6 +7,7 @@ const sentenceContainer = document.getElementById('sentenceContainer');
 const checkBtn = document.getElementById('checkBtn');
 const nextBtn = document.getElementById('nextBtn');
 const translateBtn = document.getElementById('translateBtn');
+const hintBtn = document.getElementById('hintBtn');
 
 const feedbackContainer = document.getElementById('feedbackContainer');
 const feedbackMessage = document.getElementById('feedbackMessage');
@@ -127,6 +128,7 @@ function renderSentence(sentenceObj) {
   feedbackContainer.classList.add('hidden');
   hintContainer.classList.add('hidden');
   translationContainer.classList.add('hidden');
+  hintBtn.textContent = '💡 Подсказка';
 
   // Split text by "___" and insert inputs
   const parts = sentenceObj.text.split('___');
@@ -204,6 +206,7 @@ function renderSentence(sentenceObj) {
   sentenceContainer.appendChild(sentenceP);
   checkBtn.disabled = false;
   translateBtn.disabled = false;
+  hintBtn.disabled = false;
   
   // Auto-focus first input
   if (currentInputs.length > 0) {
@@ -500,6 +503,16 @@ nextBtn.addEventListener('click', () => {
 
 checkBtn.addEventListener('click', checkAnswers);
 translateBtn.addEventListener('click', handleTranslation);
+
+hintBtn.addEventListener('click', () => {
+  if (hintContainer.classList.contains('hidden')) {
+    showHints();
+    hintBtn.textContent = '💡 Скрыть подсказку';
+  } else {
+    hintContainer.classList.add('hidden');
+    hintBtn.textContent = '💡 Подсказка';
+  }
+});
 
 // Re-render when filters change
 levelFilter.addEventListener('change', () => {
