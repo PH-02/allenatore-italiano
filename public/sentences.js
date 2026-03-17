@@ -1,244 +1,133 @@
-// sentences.js
-// Database extracted from baza.txt
-
 export const SENTENCES = [
   {
-    text: "Io sono forte; tu sei forte; lui è forte; lei è forte; noi siamo forti; voi siete forti; ___ ragazzi sono forti; ___ ragazze sono forti.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "___ ﬁori sono gialli.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ insegnanti sono gentili.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Io sono gentile; tu sei gentile; lui è gentile; lei è gentile; noi siamo gentili; voi siete gentili; ___ ragazzi sono gentili; ___ ra- gazze sono gentili.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "___ nostre ﬁglie sono pigre e viziate.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Dove sono ___ tuoi amici?",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ dottoressa è mol- to malata.",
+    text: "Parli con ___ mia segretaria e si metta d’accordo con lei",
     articles: ["la"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "___ nonno è sempre depresso.",
-    articles: ["il"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Io sono basso; tu sei basso; lui è basso; lei è bassa; noi siamo bassi; voi siete bassi; ___ ragazzi sono bassi; ___ ragazze sono basse.",
-    articles: ["i","le"],
+    text: "Karl e Klaus non hanno mai assaggiato ___ tuoi tortellini: preparaglieli!",
+    articles: ["i"],
     level: "A2",
     type: "definite"
   },
   {
-    text: "___ gatti sono molto vivaci; anche ___ gatte sono vivaci.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "Dove sono ___ professo- ri?",
+    text: "Là ci sono ___ giornali",
     articles: ["i"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "Io sono lontano; tu sei lontano; lui è lontano; lei è lontana; noi siamo lontani; voi siete lontani; ___ ragazzi sono lontani; ___ ragazze sono lontane.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "___ nonna è alta, calva e pallida.",
-    articles: ["la"],
+    text: "___ vestiti sono rossi",
+    articles: ["i"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "Nella classe ci sono ___ mie borse.",
+    text: "Tutte ___ mie amiche sono povere e disoccupate",
     articles: ["le"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "Dove sono ___ bambi- ni?",
-    articles: ["i"],
+    text: "Dopo ___ lettura, mi metto ___ cappotto, prendo ___ borsa e esco.",
+    articles: ["la","il","la"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "___ bambino è piccolo, ma carino.",
-    articles: ["il"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ nostri amici sono inglesi.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ penne sono blu.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ fratello di Giorgio è laureato.",
-    articles: ["il"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Io sono vecchio; tu sei vecchio; lui è vecchio; lei è vecchia; noi siamo vecchi; voi siete vecchi; ___ ragazzi sono vecchi; ___ ragazze sono vecchie.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "Io sono grasso; tu sei grasso; lui è grasso; lei è grassa; noi siamo grassi; voi siete grassi; ___ ragazzi sono grassi; ___ ragazze sono grasse.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "Sei ___ bravo studente?",
+    text: "Vi avverto, Carnevale c’è solo ___ volta all’anno",
     articles: ["una"],
     level: "A1",
     type: "indefinite"
   },
   {
-    text: "Queste ragazze sono castane e hanno ___ occhi verdi.",
-    articles: ["gli"],
-    level: "A2",
-    type: "definite"
+    text: "Questa è ___ chiave",
+    articles: ["una"],
+    level: "A1",
+    type: "indefinite"
   },
   {
-    text: "___ fratelli di Giulio sono studenti.",
-    articles: ["i"],
+    text: "Nella borsa ci sono ___ mie chiavi",
+    articles: ["le"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "Dopo ___ lezione ___ studentesse sono stanche.",
+    text: "Ti avverto per l’ultima volta: aspetto tutti ___ testi entro questa settimana",
+    articles: ["i"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "___ mia segretaria stampa tutti ___ documenti e spolvera ___ mio tavolo",
+    articles: ["la","i","il"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "Abbiamo ___ professoressa molto severa",
+    articles: ["una"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "al supermercato, ho comprato ___ birra e ___ ciliege",
     articles: ["la","le"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "___ nonni oggi non si sentono bene.",
+    text: "Oggi ___ professori non ci sono",
     articles: ["i"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "___ ristoranti sono cari.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Qui ci sono ___ mie amiche.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Quando è ___ tuo compleanno?",
+    text: "Cosa si fa di solito in Italia ___ fine settimana?",
     articles: ["il"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "Tutti ___ clienti del nostro negozio sono contenti del nostro servizio.",
-    articles: ["i"],
+    text: "Purtroppo ___ vicini di casa del mio amico non apprezzano molto ___ loro musica, specialmente di notte.",
+    articles: ["i","la"],
     level: "A2",
     type: "definite"
   },
   {
-    text: "___ vostra gatta è strana: è verde.",
-    articles: ["la"],
+    text: "Infatti ___ zia Albina è piuttosto grassa: somiglia a ___ ippopotamo.",
+    articles: ["la","un"],
+    level: "A1",
+    type: "mixed"
+  },
+  {
+    text: "___ professore di geometria ha spiegato ___ teorema di Pitagora.",
+    articles: ["il","il"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "___ signori sono gentili.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ amiche di Paolo sono antipatiche.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ nostri colleghi ades- so sono occupati.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Questo è ___ libro.",
-    articles: ["un"],
-    level: "A1",
-    type: "indefinite"
-  },
-  {
-    text: "Questa è ___ sedia.",
-    articles: ["una"],
-    level: "A1",
-    type: "indefinite"
-  },
-  {
-    text: "Io sono intelligente; tu sei intel- ligente; lui è intelligente; lei è intelligente; noi siamo intel- 310 КЛЮЧИ ligenti; voi siete intelligenti; ___ ragazzi sono intelligenti; ___ ragazze sono intelligenti.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "___ italiani sono eleganti.",
+    text: "Queste ragazze sono castane e hanno ___ occhi verdi",
     articles: ["gli"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "Sull’autobus ci sono quarantadue signore anziane: venti sono bionde, quindici sono castane e sette hanno ___ capelli rossi.",
-    articles: ["i"],
+    text: "addormentano molto presto, ___ suoi genitori invece vanno a dormire subito dopo ___ telefilm",
+    articles: ["i","il"],
     level: "A2",
     type: "definite"
   },
   {
-    text: "___ insegnanti.",
-    articles: ["gli"],
+    text: "___ fratello di Giorgio è laureato",
+    articles: ["il"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Può farmi ___ sconto, per favore?",
+    articles: ["lo"],
     level: "A1",
     type: "definite"
   },
@@ -249,86 +138,434 @@ export const SENTENCES = [
     type: "definite"
   },
   {
-    text: "___ nostre amiche sono svedesi: sono alte e bionde.",
-    articles: ["le"],
+    text: "___ sposa non ha ballato con nessun invitato",
+    articles: ["la"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "Questo è ___ caﬀè.",
+    text: "Se ha bisogno di cambiare ___ soldi, può provare alla cassa",
+    articles: ["i"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Se non fosse ___ imbroglione, mi fiderei di lui",
     articles: ["un"],
     level: "A1",
     type: "indefinite"
   },
   {
-    text: "Carla è ___ ragazza intelligente e simpatica.",
+    text: "Vorrei ___ camera senza aria condizionata.",
     articles: ["una"],
     level: "A1",
     type: "indefinite"
   },
   {
-    text: "___ camerieri non sono gentili; ___ cameriere invece sono gen- tili.",
-    articles: ["i","le"],
-    level: "A2",
+    text: "Abbiamo invitato ___ nostri amici a cena.",
+    articles: ["i"],
+    level: "A1",
     type: "definite"
   },
   {
-    text: "___ mia gatta è più intelligente della tua, e poi non è così grassa.",
+    text: "Odio l’odore e ___ sapore degli spiedini!",
+    articles: ["il"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Ha detto che da dieci anni non ___ regalava niente",
+    articles: ["le"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Scelgo sempre in anticipo ___ regali per ___ amici",
+    articles: ["i","gli"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Ti preoccupi troppo per ___ tua salute, Enzo: non dovresti pensarci così spesso",
     articles: ["la"],
     level: "A2",
     type: "definite"
   },
   {
-    text: "___ appartamenti.",
+    text: "Spesso ___ vedo aspettare l’autobus alla fermata",
+    articles: ["la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ gonne sono bianche",
+    articles: ["le"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Signora, Lei non può entrare in ascensore, perché ha ___ peso molto superiore al normale",
+    articles: ["un"],
+    level: "A2",
+    type: "indefinite"
+  },
+  {
+    text: "___ patente si può prendere a diciotto anni",
+    articles: ["la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Nella classe ci sono ___ mie borse",
+    articles: ["le"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Qui ci sono ___ mie amiche",
+    articles: ["le"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "barba solo ___ martedì, e va dal parrucchiere ogni sei mesi",
+    articles: ["il"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Secondo me, ___ mare più bello è in Sicilia",
+    articles: ["il"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Ho parlato con Giorgio e non ___ ho detto niente",
     articles: ["gli"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "Io sono grande; tu sei grande; lui è grande; lei è grande; noi siamo grandi; voi siete grandi; ___ ragazzi sono grandi; ___ ragazze sono grandi.",
-    articles: ["i","le"],
+    text: "Sono poche ___ persone di cui mi fido veramente",
+    articles: ["le"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ studente ha detto al suo compagno che sapeva che lui doveva studiare, ma che ogni tanto doveva anche divertirsi: e che studiare troppo ___ faceva male",
+    articles: ["lo","gli"],
     level: "A2",
     type: "definite"
   },
   {
-    text: "___ tuoi cugini sono molto pettegoli.",
+    text: "Mentre ___ mia sorella minore fa ___ pulizie, io faccio sport",
+    articles: ["la","le"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Non abbiamo mangiato quasi niente, poi siamo andati in salotto e non abbiamo preso ___ caffè, perché era finito.",
+    articles: ["il"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "Dove sono ___ miei occhiali?",
     articles: ["i"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "___ libri sono neri.",
+    text: "___ bambini sono piccoli",
     articles: ["i"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "___ rose КЛЮЧИ 309 sono belle.",
+    text: "___ amiche di Paolo sono antipatiche",
     articles: ["le"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "___ ragazze sono belle.",
+    text: "Mamma, mi puliresti ___ scarpe, per favore?",
     articles: ["le"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "___ ﬁnestre sono aperte.",
+    text: "E ___ ha detto che era licenziato",
+    articles: ["gli"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Di che colore è ___ neve?",
+    articles: ["la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ studente ha detto al suo compagno che erano d’accordo: ___ aspettava davanti al cinema tre ore dopo.",
+    articles: ["lo","lo"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "___ ragazze sono belle",
     articles: ["le"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "In giardino ci sono ___ nostri cani.",
+    text: "Sono poche ___ cose a cui tengo veramente",
+    articles: ["le"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Oggi ___ mie amiche non ci sono",
+    articles: ["le"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Nella città in cui siamo arrivati c’era ___ sciopero dei taxi",
+    articles: ["lo"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Quando sono sceso dall’autobus, ho capito di essere in ___ zona sconosciuta della città, forse vicino all’aeroporto",
+    articles: ["una"],
+    level: "A2",
+    type: "indefinite"
+  },
+  {
+    text: "Nel piatto ci sono ___ spaghetti",
+    articles: ["gli"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Quando sarà arrivato a Cuba, mi mandi ___ cartolina",
+    articles: ["una"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "Anche ___ prossimo fine settimana faremo ___ gita in montagna",
+    articles: ["il","una"],
+    level: "A1",
+    type: "mixed"
+  },
+  {
+    text: "Vicino alla fermata c’era ___ libreria, e così ho comprato qualcosa da leggere: ho comprato ___ romanzo.",
+    articles: ["una","un"],
+    level: "A2",
+    type: "indefinite"
+  },
+  {
+    text: "Lascio ___ buona mancia al cameriere, che conosco bene",
+    articles: ["una"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "Lui ha ___ bella macchina, ma preferisce usare ___ gambe.",
+    articles: ["una","le"],
+    level: "A1",
+    type: "mixed"
+  },
+  {
+    text: "Mi piacciono ___ fiori che hai comprato.",
     articles: ["i"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "Vicino al divano ci sono ___ tavoli.",
+    text: "Vuoi venire con noi da Giovanni o preferisci restare qui da solo per tutta ___ sera?",
+    articles: ["la"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "Bisognerebbe fare ___ multa a chi non spegne ___ telefonino prima di entrare in sala",
+    articles: ["una","il"],
+    level: "A2",
+    type: "mixed"
+  },
+  {
+    text: "Mi dica ___ verità!",
+    articles: ["la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ ragazzi con cui di solito esco ___ sera, hanno tutti ___ mia età",
+    articles: ["i","la","la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Lavati ___ funghi, si possono cucinare",
     articles: ["i"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ frigorifero è pieno di yogurt alla frutta.",
+    articles: ["il"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Abbiamo bisogno di ___ consiglio: daccelo!",
+    articles: ["un"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "___ nonno ha detto di versargli ___ bicchiere di vino.",
+    articles: ["il","un"],
+    level: "A1",
+    type: "mixed"
+  },
+  {
+    text: "Se tu non avessi acceso ___ tv, ___ bambino non si sarebbe svegliato",
+    articles: ["la","il"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "Anche ___ prossima settimana sarò molto occupato.",
+    articles: ["la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Sarà uscito a comprare ___ sigarette. 3 Avrà bevuto troppo, e adesso non potrà rispondere",
+    articles: ["le"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "___ mia preoccupazione maggiore era quella di fare tardi all’appuntamento",
+    articles: ["la"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "Voglio sapere ___ verità: dimmela subito!",
+    articles: ["la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Dovete scrivere ___ frasi sul quaderno e poi tradurle in italiano",
+    articles: ["le"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ caso mi ha fatto conoscere ___ nome di questa persona",
+    articles: ["il","il"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "È proprio ___ fine: mi sento invecchiare ogni giorno di più",
+    articles: ["la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Non riesci a aprire ___ finestra?",
+    articles: ["la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Se tu me ___ avessi domandato, ti avrei spiegato tutto",
+    articles: ["lo"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "In Italia ___ giovani che cercano lavoro sono molti",
+    articles: ["i"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Ugo è ___ esperto di insetti e fa collezione di scarafaggi",
+    articles: ["un"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "Non sopporto chi parla al telefono durante ___ spettacoli e disturba ___ altri spettatori.",
+    articles: ["gli","gli"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "Abitiamo lontano dal centro, ecco ___ nostro problema",
+    articles: ["il"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Finisca ___ traduzione, e faccia presto!",
+    articles: ["la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ libro di cui ho bisogno si trova diﬃcilmente in vendita",
+    articles: ["il"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Questa è ___ rosa",
+    articles: ["una"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "Fatemi provare ___’altra volta",
+    articles: ["un"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "Nella camera di mio fratello c’è sempre disordine, ___ mia invece è sempre in ordine",
+    articles: ["la"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "Qui ci sono ___ miei quaderni",
+    articles: ["i"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ macchine sono nuove",
+    articles: ["le"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ palazzi sono moderni",
+    articles: ["i"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Conosci ___ dottor Garbati? – No, non ___ conosco: chi è?",
+    articles: ["il","lo"],
     level: "A1",
     type: "definite"
   },
@@ -339,764 +576,146 @@ export const SENTENCES = [
     type: "definite"
   },
   {
-    text: "___ mie ex mogli sono alte e bionde.",
+    text: "___ tavoli sono grandi",
+    articles: ["i"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Avete ___ mani sporche: lavatevele!",
     articles: ["le"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "___ spet- tacoli.",
-    articles: ["gli"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ banche oggi sono aperte ﬁno alle due.",
+    text: "Si lavi bene ___ mani, prima di venire a tavola",
     articles: ["le"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "Giovanna è ___ donna simpatica e divertente.",
-    articles: ["una"],
-    level: "A1",
-    type: "indefinite"
-  },
-  {
-    text: "Carlo è ___ uomo debole e malato.",
-    articles: ["un"],
-    level: "A1",
-    type: "indefinite"
-  },
-  {
-    text: "Nell’armadio ci sono ___ tuoi vesti- ti marroni.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ amici del nonno sono più vecchi di lui.",
-    articles: ["gli"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ direttore del museo è ___ settantenne mezzo pazzo.",
-    articles: ["il","un"],
-    level: "A2",
-    type: "mixed"
-  },
-  {
-    text: "In cucina ci sono ___ tuoi bicchieri.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Dove sono ___ miei libri?",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Come sono ___ spaghetti?",
-    articles: ["gli"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ pizze sono buone.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ amici di Paolo sono strani.",
-    articles: ["gli"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Dove sono ___ vestiti nuo- vi?",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ camerieri sono gentili.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Qui ci sono ___ miei quaderni.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ pappagalli di mio zio sono intelligenti e parla- no molte lingue.",
-    articles: ["i"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "Voglio parlare con ___ direttrice!",
-    articles: ["la"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ gonne sono bianche.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Carla è ___ brava 314 КЛЮЧИ traduttrice e ___ ’ottima interprete.",
-    articles: ["una","un"],
-    level: "A2",
-    type: "indefinite"
-  },
-  {
-    text: "___ case sono nuove.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Questi signori sono ___ zii di Paolo; queste signore invece sono ___ zie di Paolo.",
-    articles: ["gli","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "___ divani sono comodi.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Io sono vicino; tu sei vicino; lui è vicino; lei è vicina; noi siamo vicini; voi siete vicini; ___ ragazzi sono vicini; ___ ra- gazze sono vicine.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "Di che colore sono ___ extraterrestri?",
-    articles: ["gli"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ teatro ha bisogno di assumere qualche bravo costumista.",
+    text: "Ha sentito ___ suo cuore battere più in fretta, quando ha visto quella ragazza.",
     articles: ["il"],
     level: "A2",
     type: "definite"
   },
   {
-    text: "___ mac- chine sono nuove.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Oggi ___ professori non ci sono.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Dov’è ___ giornale?",
-    articles: ["il"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "A quest’ora ___ autobus sono pieni di gente.",
-    articles: ["gli"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ segretarie sono molto puntuali.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Tutte ___ mie amiche sono povere e disoccupate.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ fratelli di Beatrice abitano da soli e studiano informatica.",
-    articles: ["i"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "Dove sono ___ Sue amiche?",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ attrici sono famose.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ nostra insegnante è giovane.",
-    articles: ["la"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Io sono magro; tu sei magro; lui è magro; lei è magra; noi siamo magri; voi siete magri; ___ ragazzi sono magri; ___ ragazze sono magre.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "Io sono buono; tu sei buono; lui è buono; lei è buo- na; noi siamo buoni; voi siete buoni; ___ ragazzi sono buoni; ___ ragazze sono buone.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "Io sono simpatico; tu sei simpatico; lui è simpatico; lei è simpatica; noi siamo simpatici; voi siete simpatici; ___ ragazzi sono simpatici; ___ ragazze sono simpatiche.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "___ studenti sono intelligenti.",
-    articles: ["gli"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Sul tavolo ci sono ___ miei dischi.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ zio di Franco è molto vecchio.",
-    articles: ["lo"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ colazione in Italia non è molto pesante: ___ caﬀè forte, pane, burro e marmellata, oppure ___ po’ di biscotti.",
-    articles: ["la","un","un"],
-    level: "A2",
-    type: "mixed"
-  },
-  {
-    text: "___ ragazzi sono intelligenti.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ madre di Andrea è bassa e grassa.",
-    articles: ["la"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ stu- dentesse sono brave.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ amici di Anna sono italiani e hanno ___ capelli neri.",
-    articles: ["gli","i"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "___ studentesse sono giovani.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ vostri struzzi non sono intelligenti.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Questa è ___ ﬁnestra.",
-    articles: ["una"],
-    level: "A1",
-    type: "indefinite"
-  },
-  {
-    text: "___ studenti oggi sono distratti e pigri.",
-    articles: ["gli"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ vestiti sono rossi.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ stu- denti.",
-    articles: ["gli"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Io sono debole; tu КЛЮЧИ 311 sei debole; lui è debole; lei è debole; noi siamo deboli; voi siete deboli; ___ ragazzi sono deboli; ___ ragazze sono deboli.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "Paolo non è ___ persona aﬃdabile.",
-    articles: ["una"],
-    level: "A1",
-    type: "indefinite"
-  },
-  {
-    text: "___ avvocatesse.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ sedie sono comode.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Come sono ___ alberghi a Roma?",
-    articles: ["gli"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ zii di Gregorio КЛЮЧИ 315 sono avari, non fanno mai regali a nessuno.",
-    articles: ["gli"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "___ studentessa è brava.",
-    articles: ["la"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Dov’è ___ Suo passaporto?",
-    articles: ["il"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Nella borsa ci sono ___ mie penne.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ nostro professore è in- sopportabile.",
-    articles: ["il"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ pra- ti sono verdi.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ palazzi sono moderni.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Ho due fratelli: ___ è impie- gato, l’altro è violinista.",
-    articles: ["uno"],
-    level: "A2",
-    type: "indefinite"
-  },
-  {
-    text: "___ vestiti di Luisa sono più costosi dei vestiti di Marta.",
-    articles: ["i"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "___ cameriere non è gentile.",
-    articles: ["il"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ giocatrici di pallacanestro sono alte.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Dov’è ___ Suo ombrello?",
-    articles: ["il"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Dove sono ___ tuoi quaderni?",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ direttore non è puntuale oggi.",
-    articles: ["il"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Io sono stanco; tu sei stanco; lui è stanco; lei è stanca; noi siamo stanchi; voi siete stan- chi; ___ ragazzi sono stanchi; ___ ragazze sono stanche.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "Dov’è ___ mamma?",
-    articles: ["la"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Mia madre fa ___ medico: è ___ dietologa.",
-    articles: ["il","una"],
-    level: "A1",
-    type: "mixed"
-  },
-  {
-    text: "È vero, è ___ atto- re brillante.",
-    articles: ["un"],
-    level: "A1",
-    type: "indefinite"
-  },
-  {
-    text: "___ città in estate sono vuote e tristi.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Mio ﬁglio fa ___ centralinista in ___ albergo.",
-    articles: ["il","un"],
-    level: "A1",
-    type: "mixed"
-  },
-  {
-    text: "Dove sono ___ came- rieri?",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ tende sono ros- se; anche ___ tappeti sono rossi.",
-    articles: ["le","i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Dove sono ___ mie pen- ne?",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ segre- tario del dottor Bondi è molto puntuale.",
-    articles: ["il"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ nostri amici sono simpatici.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ bambini sono piccoli.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ tavoli sono grandi.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Questa è ___ tigre.",
-    articles: ["una"],
-    level: "A1",
-    type: "indefinite"
-  },
-  {
-    text: "___ borse sono nere.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Io sono strano; tu sei strano; lui è strano; lei è strana; noi siamo strani; voi siete strani; ___ ragazzi sono strani; ___ ragazze sono strane.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "___ quaderni sono verdi.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Questo è ___ ﬁore.",
-    articles: ["un"],
-    level: "A1",
-    type: "indefinite"
-  },
-  {
-    text: "Là ci sono ___ giornali.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Questi sono ___ miei cani.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ gatte di notte sono tutte nere.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Io sono pallido; tu sei pallido; lui è pallido; lei è pallida; noi siamo pallidi; voi siete pallidi; ___ ragazzi sono pallidi; ___ ragazze sono pal- lide.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "Io sono alto; tu sei alto; lui è alto; lei è alta; noi siamo alti; voi siete alti; ___ ra- gazzi sono alti; ___ ragazze sono alte.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "Nella borsa ci sono ___ mie chiavi.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Oggi ___ mie amiche non ci sono.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Nel negozio ci sono ___ commesse.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ cravatte rosse sono nell’armadio.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ poltrone del salotto sono ver- di; anche ___ cactus sono verdi.",
-    articles: ["le","i"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "Sul tavolo ci sono ___ lampade.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Questi sono ___ miei professori.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ nostre amiche partono domani; vanno a Lisbona.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Queste ragazze sono ___ amiche di Giovanni.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Io sono biondo; tu sei biondo; lui è biondo; lei è bionda; noi siamo biondi; voi siete biondi; ___ ragazzi sono biondi; ___ ragazze sono bionde.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "Io sono straniero; tu sei straniero; lui è straniero; lei è straniera; noi siamo stranieri; voi siete stranieri; ___ ra- gazzi sono stranieri; ___ ragazze sono straniere.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "___ nonna ha ___ carattere strano: a volte è gentile, a volte è nervosa.",
-    articles: ["la","un"],
-    level: "A2",
-    type: "mixed"
-  },
-  {
-    text: "Dove sono ___ studentesse?",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Io sono francese; tu sei francese; lui è francese; lei è francese; noi siamo francesi; voi siete francesi; ___ ragazzi sono francesi; ___ ragazze sono francesi.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "___ impiegati sono molto occupati.",
-    articles: ["gli"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Quella signora è ___ nobile russa in esi- lio.",
-    articles: ["una"],
-    level: "A1",
-    type: "indefinite"
-  },
-  {
-    text: "___ mie sorelle vogliono andare dal parrucchiere.",
-    articles: ["le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Hai ___ macchina?",
-    articles: ["la"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Ha ___ macchina?",
-    articles: ["la"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ divani sono verdi; anche ___ poltrone sono verdi.",
-    articles: ["i","le"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Dove sono ___ giornali?",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "___ nostri amici sono alti e magri.",
-    articles: ["i"],
-    level: "A1",
-    type: "definite"
-  },
-  {
-    text: "Quell’uomo in realtà è ___ agen- te in borghese.",
-    articles: ["un"],
-    level: "A1",
-    type: "indefinite"
-  },
-  {
-    text: "Marco, ha ___ penna?",
-    articles: ["una"],
-    level: "A1",
-    type: "indefinite"
-  },
-  {
-    text: "___ prima moglie di Ugo era svedese; ___ seconda era spagnola e ___ terza portoghese.",
+    text: "Perché non ripari ___ tua macchina? – Non ne vale ___ pena: quando non funzionerà più, ___ butterò via",
     articles: ["la","la","la"],
     level: "A2",
     type: "definite"
   },
   {
-    text: "Mio ﬁglio ha smesso di studiare: adesso fa ___ cameriere.",
+    text: "___ mio vicino di casa è ___ tipo a cui succedono sempre delle cose strane",
+    articles: ["il","un"],
+    level: "A2",
+    type: "mixed"
+  },
+  {
+    text: "___ nonno ha detto al nipote che pensava di tornare al massimo giovedì o venerdì",
     articles: ["il"],
     level: "A2",
     type: "definite"
   },
   {
-    text: "___ profes- sori sono stanchi; anche ___ professoresse sono stanche.",
-    articles: ["i","le"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "___ vostri ﬁ- ___ sono ancora studenti o lavorano già?",
-    articles: ["i","gli"],
-    level: "A2",
-    type: "definite"
-  },
-  {
-    text: "Dove sono ___ loro cani?",
-    articles: ["i"],
+    text: "Non ho tempo di prepararmi ___ colazione: preparamela tu!",
+    articles: ["la"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "___ commesso è molto gentile e disponibile.",
+    text: "___ nonno ha preso ___ parte maggiore della torta, come al solito",
+    articles: ["il","la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Quanti caffè ha bevuto ___ professore? – Ne ha bevuti due",
     articles: ["il"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "___ miei amici sono più simpatici dei tuoi.",
+    text: "___ studenti sono intelligenti",
+    articles: ["gli"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ studente ha detto al suo compagno che ogni volta che studiava, anche solo per mezz’ora, ___ faceva subito male ___ testa",
+    articles: ["lo","gli","la"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "Franco verrà con sua moglie e con ___ suoi tre figli di primo letto",
     articles: ["i"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "___ nonni di Gregorio sono pensionati.",
+    text: "L’ho salutata e lei mi ha guardato in ___ modo strano",
+    articles: ["un"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "Voglio sapere ___ verità: ditemela subito!",
+    articles: ["la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Telefoni a Suo fratello e ___ dica che andremo da lui più tardi",
+    articles: ["gli"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ segretaria del dottor Garbati non ha ancora deciso se sposarlo o no, ma lui spera di convincerla presto",
+    articles: ["la"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "Devo tornare a casa perché non vedo ___ mia famiglia da tre giorni.",
+    articles: ["la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ nonni di Gregorio sono pensionati",
     articles: ["i"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "È necessario che ___ mia futura moglie tratti bene ___ mio struzzo, nonostante ___ suo brutto carattere.",
+    articles: ["la","il","il"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "___ mamma ha detto a suo figlio che ___ giorno dopo ___ avrebbe portato dal dentista",
+    articles: ["la","il","lo"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "Ho vissuto a Mosca per ___ anno, vicino alla torre di Ostankino",
+    articles: ["un"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "ci sarebbe da spostare ___ divano: mi dareste ___ mano?",
+    articles: ["il","una"],
+    level: "A1",
+    type: "mixed"
+  },
+  {
+    text: "Starà facendo ___ pulizie con l’aspirapolvere",
+    articles: ["le"],
     level: "A1",
     type: "definite"
   },
@@ -1107,57 +726,99 @@ export const SENTENCES = [
     type: "definite"
   },
   {
-    text: "Dove sono ___ tue borse?",
+    text: "Mia sorella esce tutte ___ sere con quel ragazzo",
     articles: ["le"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "Tua cugina è furba ma non è intelligente: è ___ deﬁciente completa.",
-    articles: ["una"],
-    level: "A2",
-    type: "indefinite"
-  },
-  {
-    text: "Ha ___ sigaretta?",
-    articles: ["una"],
+    text: "Ha detto che ___ mancavano solo tre anni",
+    articles: ["gli"],
     level: "A1",
-    type: "indefinite"
-  },
-  {
-    text: "Anche mia zia fa ___ medico: è ___ gerontologa.",
-    articles: ["il","una"],
-    level: "A1",
-    type: "mixed"
-  },
-  {
-    text: "Questi ragazzi sono ___ fratelli di Paolo; queste ragazze invece sono ___ sorelle di Marco.",
-    articles: ["i","la"],
-    level: "A2",
     type: "definite"
   },
   {
-    text: "Dove sono ___ nostri gatti?",
+    text: "È ___ problema di cui non posso occuparmi adesso",
+    articles: ["un"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "Perché non cerchi ___ lavoro con ___ stipendio migliore?",
+    articles: ["un","uno"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "___ banche oggi sono aperte fino alle due",
+    articles: ["le"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Se facesse freddo, mi metterei ___ cappotto",
+    articles: ["il"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Mio padre ci mette circa ___’ora per andare in uﬃcio, e spesso ___ capita di arrivare in ritardo",
+    articles: ["un","gli"],
+    level: "A2",
+    type: "mixed"
+  },
+  {
+    text: "Scusi, ha ___ sigaretta?",
+    articles: ["una"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "___ capo l’ha visto dormire e l’ha licenziato",
+    articles: ["il"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ mia famiglia vive in questa città da tre generazioni",
+    articles: ["la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Tu vedi spesso ___ tuoi genitori? – No, non li vedo spesso",
     articles: ["i"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "Quando è ___ sciopero dei treni?",
-    articles: ["lo"],
+    text: "e lavora per ___ ditta che produce gambe artificiali.",
+    articles: ["una"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "___ professore incontra ___ studenti e li saluta",
+    articles: ["il","gli"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "Dove sono ___ Suoi ﬁ ___ , Signora?",
-    articles: ["i","gli"],
+    text: "Li mando nell’orto e ___ faccio raccogliere ___ patate",
+    articles: ["gli","le"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "In casa nostra ci sono tre camere: ___ mia camera è ___ più grande.",
-    articles: ["la","la"],
+    text: "Anche domani ___ donna di servizio non potrà venire perché avrà ___ altro impegno",
+    articles: ["la","un"],
     level: "A2",
+    type: "mixed"
+  },
+  {
+    text: "___ signori sono gentili",
+    articles: ["i"],
+    level: "A1",
     type: "definite"
   },
   {
@@ -1167,39 +828,375 @@ export const SENTENCES = [
     type: "definite"
   },
   {
-    text: "___ mia ragazza è più giovane di me, ma sembra più grande perché è molto seria e studiosa.",
-    articles: ["la"],
+    text: "Ci sono due finestre, ___ libreria piena di libri e ___ grande tavolo per ___ computer",
+    articles: ["una","un","il"],
+    level: "A2",
+    type: "mixed"
+  },
+  {
+    text: "___ professore è entrato in classe e noi ___ abbiamo detto buongiorno",
+    articles: ["il","gli"],
     level: "A2",
     type: "definite"
   },
   {
-    text: "___ tuoi colleghi sono molto noiosi.",
+    text: "Anche ___ mese prossimo mia moglie spenderà in cosmetici molto più di quanto io guadagnerò",
+    articles: ["il"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "___ Sue chiavi sono sul tavolo, guardi meglio",
+    articles: ["le"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Che cosa ___ ha fatto cambiare opinione?",
+    articles: ["le"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Quelli che vogliono richiedere ___ visto, devono riempire questo modulo",
+    articles: ["il"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "Intanto, mentre aspettavo, sono arrivate anche altre persone che dovevano prendere ___ 34.",
+    articles: ["il"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "L’oro è ___ minerale",
+    articles: ["un"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "E poi quella sera voleva vedere ___ partita alla televisione.",
+    articles: ["la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ nonno vuole che ___ pappagallo impari a memoria l’inno degli studenti",
+    articles: ["il","il"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "Vorrei che arrivasse presto ___ primavera",
+    articles: ["la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Cerco ___ appartamento a Roma, perché voglio visitare ___ città e imparare bene l’italiano.",
+    articles: ["un","la"],
+    level: "A2",
+    type: "mixed"
+  },
+  {
+    text: "___ professore ha incontrato Anna in corridoio, l’ha salutata e ___ ha restituito ___ suoi quaderni",
+    articles: ["il","le","i"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "A chi darete ___ soldi? – Li daremo a Carlo",
     articles: ["i"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "Abbiamo ___ professoressa molto severa.",
+    text: "Mi alzo tutti ___ giorni alle otto.",
+    articles: ["i"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Ho fatto riparare ___ frigo all’elettricista",
+    articles: ["il"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Nella bottiglia c’è ___ vino",
+    articles: ["il"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Starà ascoltando ___ musica",
+    articles: ["la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Anche domani sera mia sorella conoscerà ___ ragazzo in discoteca",
+    articles: ["un"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "Dove sono ___ vestiti nuovi?",
+    articles: ["i"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Questa palla non è tua, è di ___ altro bambino: restituiscigliela subito!",
+    articles: ["un"],
+    level: "A2",
+    type: "indefinite"
+  },
+  {
+    text: "Chi ___ ha sporcate così?",
+    articles: ["le"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Letta ___ lettera, ho scritto subito ___ risposta",
+    articles: ["la","la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ altri studenti fanno tutti ___ esercizi, io invece non li faccio tutti.",
+    articles: ["gli","gli"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "Alle cinque devo accompagnare ___ miei amici all’aeroporto",
+    articles: ["i"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Angela preferisce ___ tortellini ai ravioli",
+    articles: ["i"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ funghi che abbiamo raccolto ieri, li abbiamo regalati ai nostri vicini",
+    articles: ["i"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "Voglio che ___ mio cane impari a portarmi ___ pantofole a letto",
+    articles: ["il","le"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ ho fatto mettere in ordine ___ sua stanza",
+    articles: ["gli","la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Anche domani mia moglie farà ___ scenata senza motivo",
     articles: ["una"],
     level: "A1",
     type: "indefinite"
   },
   {
-    text: "___ sorella di Lorenzo è ___ pianista famosa.",
-    articles: ["la","una"],
+    text: "Siamo andati nel bosco e abbiamo raccolto ___ lamponi selvatici",
+    articles: ["i"],
     level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Dopo ___ lezione ___ studentesse sono stanche",
+    articles: ["la","le"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Gianni è ___ migliore dei miei amici",
+    articles: ["il"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Non ho più contanti, perché li ho usati per pagare ___ conto dell’albergo",
+    articles: ["il"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "Paolo non è ___ persona aﬃdabile",
+    articles: ["una"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "___ prosciutto che abbiamo assaggiato ieri era migliore di questo",
+    articles: ["il"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "A me piace più restare a casa che uscire con ___ amici",
+    articles: ["gli"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ mese scorso Carlo mi ha detto che due giorni dopo sarebbe arrivata sua zia da Torino",
+    articles: ["il"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "Bisognerebbe che qualcuno mi aiutasse a spostare ___ mobili",
+    articles: ["i"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Giovanni è ___ persona con cui io parlo più volentieri",
+    articles: ["la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ prati sono verdi",
+    articles: ["i"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Anche l’inverno prossimo ___ mio struzzo avrà l’inﬂuenza",
+    articles: ["il"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "di tedesco, che diceva che non ___ vedeva da tre mesi",
+    articles: ["lo"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ moglie del dottor Garbati scia, e anch’io scio",
+    articles: ["la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Per ___ po’ di tempo non è successo niente, poi è passato ___ autobus, ma non era ___ 34.",
+    articles: ["un","un","il"],
+    level: "A2",
     type: "mixed"
   },
   {
-    text: "___ università italiane sono molto antiche.",
+    text: "Non abbiamo ___ macchina per fare l’espresso, compriamocela!",
+    articles: ["una"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "Stamattina alle otto ___ gatto è scappato dalla finestra",
+    articles: ["il"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Sono io che devo ricevere ___ stipendio",
+    articles: ["lo"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Ha detto che, appena avrebbe imparato a dipingere, mi avrebbe fatto ___ ritratto.",
+    articles: ["un"],
+    level: "A2",
+    type: "indefinite"
+  },
+  {
+    text: "Gradirebbe ___ tazza di tè, Professore?",
+    articles: ["una"],
+    level: "A1",
+    type: "indefinite"
+  },
+  {
+    text: "Se Ugo avesse sposato ___’ereditiera americana, avrebbe risolto ___ suoi problemi economici",
+    articles: ["un","i"],
+    level: "A2",
+    type: "mixed"
+  },
+  {
+    text: "___ cliente ha cominciato a gridare che nessuno ___ amava.",
+    articles: ["il","lo"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Dove sono ___ giornali?",
+    articles: ["i"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Anche ___ mese prossimo ripareremo ___ frigorifero",
+    articles: ["il","il"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Appena finisci di scrivere ___ lettera per l’avvocato, spediscigliela!",
+    articles: ["la"],
+    level: "A2",
+    type: "definite"
+  },
+  {
+    text: "Voglio che tu non ___ veda più",
+    articles: ["lo"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Bambini, oggi avete ___ quaderni con ___ composizioni?",
+    articles: ["i","le"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Anche ___ prossimo semestre ___ mia palestra sarà chiusa per lavori",
+    articles: ["il","la"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "Adesso lei sta con ___ suoi genitori e non lavora",
+    articles: ["i"],
+    level: "A1",
+    type: "definite"
+  },
+  {
+    text: "___ tasse vanno pagate",
     articles: ["le"],
     level: "A1",
     type: "definite"
   },
   {
-    text: "___ porte sono chiuse.",
-    articles: ["le"],
+    text: "Dove sono ___ Suoi figli, Signora?",
+    articles: ["i"],
     level: "A1",
     type: "definite"
+  },
+  {
+    text: "Però quel giorno lui riceve molte telefonate di auguri, da tutti ___ suoi parenti: lui infatti ha ___ famiglia numerosa, con molti figli e nipoti.",
+    articles: ["i","una"],
+    level: "A2",
+    type: "mixed"
   }
 ];
