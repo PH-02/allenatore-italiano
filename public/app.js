@@ -144,6 +144,16 @@ function renderSentence(sentenceObj) {
         
         span.addEventListener('mouseenter', (e) => showWordTooltip(word, e));
         span.addEventListener('mouseleave', hideWordTooltip);
+        // Mobile: tap to show tooltip, tap elsewhere to hide
+        span.addEventListener('touchstart', (e) => {
+          e.preventDefault();
+          // If this word's tooltip is already visible, hide it
+          if (wordTooltip._currentWord === word && wordTooltip.classList.contains('visible')) {
+            hideWordTooltip();
+          } else {
+            showWordTooltip(word, e);
+          }
+        }, { passive: false });
         
         sentenceP.appendChild(span);
       } else {
@@ -224,6 +234,7 @@ async function showWordTooltip(word, event) {
     const cleanWord = word.replace(/[.,?!:;'"’]/g, '').trim().toLowerCase();
     
     // If we have it in cache, show instantly
+    wordTooltip._currentWord = word;
     if (tooltipCache[cleanWord]) {
       wordTooltip.textContent = tooltipCache[cleanWord];
       wordTooltip.style.top = `${getTopPos()}px`;
@@ -268,7 +279,15 @@ async function showWordTooltip(word, event) {
 function hideWordTooltip() {
   clearTimeout(tooltipTimeout);
   wordTooltip.classList.remove('visible');
+  wordTooltip._currentWord = null;
 }
+
+// Close tooltip when tapping anywhere outside an interactive word (mobile)
+document.addEventListener('touchstart', (e) => {
+  if (!e.target.classList.contains('interactive-word')) {
+    hideWordTooltip();
+  }
+}, { passive: true });
 
 // Normalize apostrophes and lowercase
 function normalizeAnswer(str) {

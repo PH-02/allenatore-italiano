@@ -477,6 +477,13 @@ button:disabled {
   text-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
 }
 
+/* Mobile: provide tap feedback */
+.interactive-word:active {
+  color: var(--accent-primary);
+  text-decoration-color: var(--accent-primary);
+  -webkit-tap-highlight-color: transparent;
+}
+
 .word-tooltip {
   position: absolute;
   top: 0;
