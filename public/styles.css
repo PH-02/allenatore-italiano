@@ -438,6 +438,48 @@ button:disabled {
   font-size: 1rem;
 }
 
+/* Spoiler: article name is hidden until tapped (like Telegram spoilers) */
+.hint-spoiler {
+  display: inline-block;
+  background-color: rgba(165, 180, 252, 0.15);
+  border: 1px solid rgba(165, 180, 252, 0.3);
+  border-radius: 4px;
+  padding: 1px 7px;
+  cursor: pointer;
+  color: transparent;
+  user-select: none;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  font-weight: 700;
+  font-size: 1rem;
+  min-width: 2.5rem;
+  text-align: center;
+}
+
+.hint-spoiler::before {
+  content: '?';
+  color: rgba(165, 180, 252, 0.6);
+  font-size: 0.85rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hint-spoiler {
+  position: relative;
+}
+
+.hint-spoiler.revealed {
+  color: #a5b4fc;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: default;
+}
+
+.hint-spoiler.revealed::before {
+  display: none;
+}
+
+
 .hint-form em {
   color: var(--text-tertiary);
   font-style: italic;
