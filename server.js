@@ -24,7 +24,7 @@ app.post('/api/translate', async (req, res) => {
       return res.status(400).json({ error: 'Text is required for translation' });
     }
 
-    const apiKey = process.env.DEEPL_API_KEY;
+    const apiKey = (process.env.DEEPL_API_KEY || '').trim();
     if (!apiKey) {
       return res.status(500).json({ error: 'Translation server is not configured properly (missing API key).' });
     }
